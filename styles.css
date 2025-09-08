@@ -1,0 +1,83 @@
+/* navigation */
+
+nav{
+    background-color: gray;
+    padding: 1em 3em;
+    display: flex;
+    gap: 2em;
+}
+
+a.navlink{
+    color: lightsteelblue;
+    font-size: 18pt;
+    font-family: "Cossette Titre", sans-serif;
+}
+
+a:visited.navlink{
+    color: lightsteelblue;
+}
+
+input[type=text]{
+    background-color:white;
+    border: 2px solid black;
+    color: black;
+    font-family: "Space Mono", monospace;
+    font-size: 14pt;
+    width: 150px;
+    transition: ease-in-out 0.3s;
+}
+
+input:focus{
+    width: 40vw;
+}
+
+
+/* images */
+
+img.icon{
+    max-height: 25px;
+    border-radius: 5px;
+}
+
+
+/* text formatting */
+
+h1{
+    font-size: 32pt;
+    font-family: "Space Mono", monospace;
+    font-weight: 700;
+    color:darkslateblue;
+}
+
+/* fonts */
+
+.bona-nova-regular {
+  font-family: "Bona Nova", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.bona-nova-bold {
+  font-family: "Bona Nova", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.bona-nova-regular-italic {
+  font-family: "Bona Nova", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+
+.space-mono-regular {
+  font-family: "Space Mono", monospace;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.space-mono-regular-italic {
+  font-family: "Space Mono", monospace;
+  font-weight: 400;
+  font-style: italic;
+}
