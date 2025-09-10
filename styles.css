@@ -1,7 +1,7 @@
 /* navigation */
 
 nav{
-    background-color: gray;
+    background-color: #4C5A6B;
     padding: 0em 3em;
     display: flex;
     gap: 2em;
@@ -35,19 +35,19 @@ a:visited.navlink{
     color: lightsteelblue;
 }
 
-input[type=text]{
+input[type=text].search{
     background-color:white;
     border: 2px solid black;
     color: black;
     font-family: "Space Mono", monospace;
     font-size: 16pt;
     max-width: 250px;
-    transition: ease-in-out 0.3s;
+    transition: max-width ease-in-out 0.3s;
     padding-left: 1em;
 }
 
-input:focus{
-    max-width: 40vw;
+input:focus.search{
+    max-width: 400px;
 }
 
 
@@ -81,9 +81,8 @@ img.mini_card{
 .dropdown_content{
     display: none;
     position: absolute;
-    background-color:rgb(25, 42, 64);
+    background-color:#4C5A6B;
     min-width: 130px;
-    box-shadow: 0px 8px 16px 0px #000000;
     padding: 12px 16px;
 }
 
@@ -93,7 +92,7 @@ img.mini_card{
 
 header{
     min-height: fit-content;
-    background-color: lightsteelblue;
+    background-color: #B0C4DE;
     border-radius: 0px 0px 15px 15px;
     padding: 1em 0em;
 }
@@ -104,7 +103,10 @@ header.clear{
 .pagebox{
     background-image: linear-gradient(#F8EFE8,#F2F6F8);
     width: 100%;
+    max-height: max(fit-content, 100vh);
+    padding-bottom: 10vh;
 }
+
 
 .animal_gallery{
     display: flex;
@@ -140,6 +142,14 @@ header.clear{
     max-width: 400px;
     min-height: 400px;
 }
+
+.mini_item{
+    background-color: #A49079;
+    border-radius: 7px 7px 0px 0px;
+    text-align: center;
+    max-width: 20em;
+    min-height: 10em;
+}
 .detail_item_light{
     background-color: #B0C4DE;
     border-radius: 7px 7px 0px 0px;
@@ -156,11 +166,81 @@ header.clear{
     padding: 0 2em;
 }
 
+.textbox_green{
+    text-align: center;
+    background-color: #C9E79C;
+    border: 4px #A49079 solid;
+    border-radius: 10px;
+    margin: 3em 3em;
+    height: fit-content;
+    padding: 4em 2em;
+}
+
 hr{
     align: center;
     color: #4C5A6B;
     size: 5px;
     width: 80vw;
+}
+
+/* forms */
+
+.form{
+    padding: 1em 2em;
+}
+
+input[type=text].small_input{
+    background-color:white;
+    border: 2px solid black;
+    color: black;
+    font-family: "Space Mono", monospace;
+    font-size: 14pt;
+    max-width: 50%;
+    padding: 0.5em 1em;
+}
+
+input[type=file]{
+    border: 3px solid #4C5A6B;
+    padding: 4em;
+    font-size: 12pt;
+}
+
+textarea.small_input{
+    background-color:white;
+    border: 2px solid black;
+    color: black;
+    font-family: "Space Mono", monospace;
+    font-size: 14pt;
+    max-width: 50%;
+    padding: 0.5em 1em;
+}
+
+textarea.large_input{
+    background-color:white;
+    border: 2px solid black;
+    color: black;
+    font-family: "Space Mono", monospace;
+    font-size: 14pt;
+    width: 60%;
+    height: fit-content;
+    transition: width ease-in-out 0.3s;
+    padding: 0.5em 1em;
+}
+
+button{
+    border-radius: 7px;
+    background-color: #4C5A6B;
+    font-family: "Space Mono", monospace;
+    font-size: 14pt;
+    margin: 1em 3em;
+    padding: 0.5em;
+    width: 10em;
+}
+
+button:hover{
+    color: #F2F6F8;
+    background-color: #B0C4DE;
+    border-color: #B0C4DE;
 }
 
 
@@ -184,9 +264,18 @@ h2{
     color:#4C5A6B;
 }
 
+h2.light{
+    color: #F2F6F8;
+    font-family: "Space Mono", monospace;
+}
+
 p{
     color: #0A0908;
     font-family: "Space Mono", monospace;
+}
+
+p.important{
+    font-weight: 700;
 }
 
 p.caption{
